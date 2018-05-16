@@ -15,12 +15,18 @@ StrToNum.prototype.toPositiveInteger = function () {};
 StrToNum.prototype.toNegtiveInteger = function () {};
 
 // 转成浮点数
-StrToNum.prototype.toFloat = function () {};
+StrToNum.prototype.toFloat = function () {
+  var decimal = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
+};
 
 // 转成正浮点数
-StrToNum.prototype.toPositiveFloat = function () {};
+StrToNum.prototype.toPositiveFloat = function () {
+  var decimal = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
+};
 
 // 转成负浮点数
-StrToNum.prototype.toNegtiveFloat = function () {};
+StrToNum.prototype.toNegtiveFloat = function () {
+  var decimal = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
+};
 
 module.exports = new StrToNum();

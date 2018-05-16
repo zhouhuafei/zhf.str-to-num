@@ -17,15 +17,15 @@ StrToNum.prototype.toNegtiveInteger = function () {
 };
 
 // 转成浮点数
-StrToNum.prototype.toFloat = function () {
+StrToNum.prototype.toFloat = function (decimal = 2) {
 };
 
 // 转成正浮点数
-StrToNum.prototype.toPositiveFloat = function () {
+StrToNum.prototype.toPositiveFloat = function (decimal = 2) {
 };
 
 // 转成负浮点数
-StrToNum.prototype.toNegtiveFloat = function () {
+StrToNum.prototype.toNegtiveFloat = function (decimal = 2) {
 };
 
 module.exports = new StrToNum();
