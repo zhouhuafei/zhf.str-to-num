@@ -1,0 +1,40 @@
+{
+    "name": "zhf.str-to-num",
+    "version": "1.0.0",
+    "description": "把字符串转成指定类型的数字，转不了的转成空字符串",
+    "main": "dist/index.min.js",
+    "scripts": {
+        "codeLint": "eslint --ext .js,.vue,.html ./",
+        "codeFix": "eslint --fix --ext .js,.vue,.html ./",
+        "gulp": "gulp",
+        "test": "jest",
+        "precommit": "npm run codeLint && npm run test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zhouhuafei/zhf.str-to-num.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zhouhuafei/zhf.str-to-num/issues"
+    },
+    "homepage": "https://github.com/zhouhuafei/zhf.str-to-num#readme",
+    "devDependencies": {
+        "babel-eslint": "^8.0.2",
+        "babel-preset-env": "^1.6.0",
+        "eslint": "^4.11.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-plugin-html": "^3.2.2",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-node": "^5.2.1",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "gulp": "^3.9.1",
+        "gulp-babel": "^7.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-uglify": "^3.0.0",
+        "husky": "^0.14.3",
+        "jest": "^22.1.1"
+    }
+}
