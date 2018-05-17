@@ -1,7 +1,7 @@
 {
     "name": "zhf.str-to-num",
     "version": "1.0.0",
-    "description": "把字符串转成指定类型的数字，转不了的转成空字符串",
+    "description": "对字符串进行数字格式化，格式化完毕还是字符串，格不了的变成空字符串。",
     "main": "dist/index.min.js",
     "scripts": {
         "codeLint": "eslint --ext .js,.vue,.html ./",
