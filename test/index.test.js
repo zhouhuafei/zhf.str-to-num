@@ -55,4 +55,17 @@ test(`对字符串进行数字格式化，格式化完毕还是字符串，格�
     expect(strToNum.toNegativeFloat('..a.1.0...bc...0.....1..23....465.....798', 4)).toEqual('-1.0000');
     expect(strToNum.toNegativeFloat('0123', 5)).toEqual('-123.00000');
     expect(strToNum.toNegativeFloat('-0123', 6)).toEqual('-123.000000');
+    // 格式化测试
+    expect(strToNum.toInteger('', true)).toEqual('');
+    expect(strToNum.toInteger('1000000', true)).toEqual('1,000,000');
+    expect(strToNum.toPositiveInteger('', true)).toEqual('');
+    expect(strToNum.toPositiveInteger('1000000', true)).toEqual('1,000,000');
+    expect(strToNum.toNegativeInteger('', true)).toEqual('');
+    expect(strToNum.toNegativeInteger('-1000000', true)).toEqual('-1,000,000');
+    expect(strToNum.toFloat('', 2, true)).toEqual('');
+    expect(strToNum.toFloat('呵呵1000000.1', 2, true)).toEqual('1,000,000.10');
+    expect(strToNum.toPositiveFloat('', 2, true)).toEqual('');
+    expect(strToNum.toPositiveFloat('1000000.1哈哈', 2, true)).toEqual('1,000,000.10');
+    expect(strToNum.toNegativeFloat('', 2, true)).toEqual('');
+    expect(strToNum.toNegativeFloat('-1000000.1', 2, true)).toEqual('-1,000,000.10');
 });

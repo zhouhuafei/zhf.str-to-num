@@ -1,6 +1,6 @@
 {
     "name": "zhf.str-to-num",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "对字符串进行数字格式化，格式化完毕还是字符串，格不了的变成空字符串。",
     "main": "dist/index.min.js",
     "scripts": {
@@ -38,6 +38,7 @@
         "jest": "^22.1.1"
     },
     "dependencies": {
-        "zhf.keep-decimal": "^1.0.7"
+        "zhf.keep-decimal": "^1.0.7",
+        "zhf.money-format": "^1.0.1"
     }
 }

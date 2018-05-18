@@ -74,3 +74,7 @@ const strToNum = require('zhf.str-to-num');
     strToNum.toNegativeFloat('0123', 5); // '-123.00000'
     strToNum.toNegativeFloat('-0123', 6); // '-123.000000'
 ```
+
+* 格式化测试
+```
+```
