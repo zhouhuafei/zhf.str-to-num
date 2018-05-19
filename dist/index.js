@@ -66,7 +66,7 @@ StrToNum.prototype.toPositiveFloat = function (v) {
     if (Number(str) < 0) {
         str = str.substring(1);
     }
-    if (str.length > 3 && isFormat) {
+    if (str.split('.')[0].length > 3 && isFormat) {
         str = moneyFormat(str);
     }
     return '' + str;
@@ -81,7 +81,7 @@ StrToNum.prototype.toNegativeFloat = function (v) {
     if (str !== '') {
         str = '-' + str;
     }
-    if (str.length > 3 && isFormat) {
+    if (str.split('.')[0].length > 3 && isFormat) {
         str = moneyFormat(str);
     }
     return str;
